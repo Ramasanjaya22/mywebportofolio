@@ -9,7 +9,16 @@ import Projects from '@/components/Projects'
 import Contact from '@/components/Contact'
 import dynamic from 'next/dynamic'
 
-const AnimatedCursorCustom = dynamic(() => import('react-animated-cursor'), {
+
+
+interface AnimatedCursorProps {
+  innerSize: number;
+  outerSize: number;
+  color: string;
+  clickables: string[];
+}
+
+const AnimatedCursorCustom = dynamic<AnimatedCursorProps>(() => import('react-animated-cursor'), {
   ssr: false
 });
 
@@ -46,8 +55,8 @@ const Home: NextPage = () => {
 
       
       <AnimatedCursorCustom
-        innerSize={15}
-        outerSize={15}
+      innerSize={15}
+      outerSize={15}
       color='5, 150, 105'
       clickables={[
         'span','button'
