@@ -2,26 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+@layer components{
+    .heroButton{
+        @apply px-6 py-2 rounded-full uppercase text-xs tracking-widest text-slate-500 transition-all hover:border-[#12d571]/40 hover:text-[#12d571]/40
+    }
+    .contactInput {
+        @apply outline-none bg-slate-400/10 border-b-2 px-6 py-3 md:py-4  text-gray-500 placeholder-gray-500 transition-all hover:border-emerald-400/40;
+      }
+    }
+    @layer utilities {
+        .scrollbar::-webkit-scrollbar {
+          width: 5px;
+          height: 5px;
+        }
+      
+        .scrollbar::-webkit-scrollbar-track {
+          background: #c0c0c0;
+        }
+      
+        .scrollbar::-webkit-scrollbar-thumb {
+          background: #059669;
+        }
+      
+        .scrollbar::-webkit-scrollbar-thumb:hover {
+          background: #006142;
+        }
+        * {
+          cursor: none !important;
+        }
+      }
