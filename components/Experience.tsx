@@ -6,7 +6,7 @@ type Props = {}
 export default function Experience({ }: Props) {
   return (
     <motion.div
-      className="h-screen relative flex flex-col justify-evenly items-center mx-auto overflow-hidden text-left md:flex-row max-w-full px-10"
+      className="h-screen relative flex flex-col justify-center items-center mx-auto overflow-hidden text-left md:flex-row max-w-full px-10"
       initial={{
         opacity: 0,
       }}
@@ -21,7 +21,7 @@ export default function Experience({ }: Props) {
         Experience
       </h3>
 
-      <div className="w-full md:h-[80%] flex space-x-2 overflow-x-scroll scrollbar p-8 snap-x snap-mandatory">
+      <div className="w-full md:h-[80%] flex space-x-2 overflow-x-scroll scrollbar p-8 snap-x snap-mandatory item-center justify-center">
 
         {/* experiencecard */}
         {/* 1 */}

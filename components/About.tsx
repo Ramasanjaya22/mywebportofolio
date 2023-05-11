@@ -29,8 +29,8 @@ export default function About({}: Props) {
          className="-mb-20 md:mb-0 flex-shrink-0 sm:w-56 sm:h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-full xl:w-[500px] xl:h-[600px]"
         />
 
-        <div className='space-y-8 px-0 md:px-8'>
-            <h4 className='text-5xl font-semibold font-mono'>Get to {" "}
+<div className='space-y-8 px-0 md:px-8'>
+            <h4 className='text-5xl font-semibold font-mono mt-4'>Get to {" "}
             <span className='underline decoration-emerald-600'>know</span>{" "}
             me
             </h4>
