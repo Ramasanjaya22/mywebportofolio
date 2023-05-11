@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@types/react-scroll": "^1.8.6",
+    "@types/three": "^0.152.0",
     "react-animated-cursor": "^2.6.0",
     "tailwind-scrollbar": "^3.0.0"
   }
