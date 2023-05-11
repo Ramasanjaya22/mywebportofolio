@@ -24,7 +24,7 @@ const AnimatedCursorCustom = dynamic<AnimatedCursorProps>(() => import('react-an
 
 const Home: NextPage = () => {
   return (
-    <div className='h-screen bg-gray-200 text-slate-600 overflow-x-hidden overflow-y-scroll scrollbar'>
+    <div className='container_custom h-screen bg-gray-200 text-slate-600 overflow-x-hidden overflow-y-scroll scrollbar'>
       <Head>
         <title>Rama Sanjaya</title>
       </Head>

@@ -2,32 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .heroButton{
-        @apply px-6 py-2 rounded-full uppercase text-xs tracking-widest text-slate-500 transition-all hover:border-[#12d571]/40 hover:text-[#12d571]/40
+@layer components {
+  .heroButton {
+    @apply px-6 py-2 rounded-full uppercase text-xs tracking-widest text-slate-500 transition-all hover:border-[#12d571]/40 hover:text-[#12d571]/40;
+  }
+  .contactInput {
+    @apply outline-none bg-slate-400/10 border-b-2 px-6 py-3 md:py-4  text-gray-500 placeholder-gray-500 transition-all hover:border-emerald-400/40;
+  }
+}
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: #c0c0c0;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #059669;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #006142;
+  }
+  * {
+    cursor: none !important;
+  }
+  body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* .container_custom {
+    position: relative;
+    pointer-events: none;
+    user-select: none;
+    
+  } */
+  .container_custom::before {
+    z-index: 999;
+    position: fixed;
+    content: "";
+    height: 300%;
+    width: 300%;
+    top: -100%;
+    left: -50%;
+    pointer-events: none;
+    user-select: none;
+    background-image: url("http://momentsingraphics.de/Media/BlueNoise/WhiteNoiseDithering.png");
+    opacity: 0.029;
+    animation: noise 8s steps(10) infinite;
+  }
+  @keyframes noise {
+    0%,
+    100% {
+      transform: translate(0, 0);
     }
-    .contactInput {
-        @apply outline-none bg-slate-400/10 border-b-2 px-6 py-3 md:py-4  text-gray-500 placeholder-gray-500 transition-all hover:border-emerald-400/40;
-      }
+    10% {
+      transform: translate(-5%, -10%);
     }
-    @layer utilities {
-        .scrollbar::-webkit-scrollbar {
-          width: 5px;
-          height: 5px;
-        }
-      
-        .scrollbar::-webkit-scrollbar-track {
-          background: #c0c0c0;
-        }
-      
-        .scrollbar::-webkit-scrollbar-thumb {
-          background: #059669;
-        }
-      
-        .scrollbar::-webkit-scrollbar-thumb:hover {
-          background: #006142;
-        }
-        * {
-          cursor: none !important;
-        }
-      }
+    20% {
+      transform: translate(-15%, 5%);
+    }
+    30% {
+      transform: translate(7%, -25%);
+    }
+    40% {
+      transform: translate(-5%, 25%);
+    }
+    50% {
+      transform: translate(-15%, 10%);
+    }
+    60% {
+      transform: translate(15%, 0%);
+    }
+    70% {
+      transform: translate(0%, 15%);
+    }
+    80% {
+      transform: translate(3%, 35%);
+    }
+    90% {
+      transform: translate(-10%, 10%);
+    }
+  }
+}
