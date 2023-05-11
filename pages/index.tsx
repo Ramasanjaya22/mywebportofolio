@@ -58,7 +58,7 @@ const Home: NextPage = () => {
   return (
     <div
     ref={vantaRef}
-     className='container_custom h-screen bg-gray-200 text-slate-600 overflow-x-hidden overflow-y-scroll scrollbar'>
+     className='container_custom h-screen bg-gray-200 dark:bg-[#09090f] text-slate-600 overflow-x-hidden overflow-y-scroll scrollbar'>
       <Head>
         <title>Rama Sanjaya</title>
       </Head>
