@@ -25,7 +25,7 @@ export default function Experience({ }: Props) {
 
         {/* experiencecard */}
         {/* 1 */}
-          <article className="flex flex-col rounded-sm items-center flex-shrink-0 w-[200px] md:w-[300px] xl:w-[700px] snap-center bg-[#d3d3d3] hover:bg-[#c5c5c5] cursor-pointer transition ease-in-out duration-200 overflow-x-hidden overflow-y-hidden">
+          <article className="flex flex-col rounded-sm items-center flex-shrink-0 w-[200px] md:w-[300px] xl:w-[700px] snap-center bg-[#d3d3d3] hover:bg-[#c5c5c5] dark:bg-[#34383a] hover:dark:bg-[#212425] dark:text-[#aba59b] cursor-pointer transition ease-in-out duration-200 overflow-x-hidden overflow-y-hidden">
             <motion.img
               className="w-24 h-24 rounded-full md:rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center p-4"
               initial={{
@@ -43,7 +43,7 @@ export default function Experience({ }: Props) {
                 <img className="h-10 w-10 rounded-full" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="tech image" />
                 
               </div>
-              <p className="uppercase py-2 text-gray-600 text-xs font-semibold">
+              <p className="uppercase py-2 text-xs font-semibold">
                 Started work 2022 -Ended 2023
               </p>
               <div className="overflow-x-hidden overflow-y-hidden h-fit">

@@ -30,7 +30,7 @@ const AnimatedCursorCustom = dynamic<AnimatedCursorProps>(() => import('react-an
 const Home: NextPage = () => {
   const [vantaEffect, setVantaEffect] = useState<VantaType | null>(null);
   const vantaRef = useRef(null);
-  const bgColor = 0xE5E7EB;
+  
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
       outerSize={15}
       color='5, 150, 105'
       clickables={[
-        'span','button'
+        'span','button',
       ]}
       />
     </div>

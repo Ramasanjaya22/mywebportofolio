@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 type Props = {};
 
@@ -18,8 +19,8 @@ const ExperienceCard = (props: Props) => {
       <h4 className="text-4xl font-light">Job title</h4>
       <p className="font-bold text-2xl mt-1">Telkom University</p>
       <div className="flex space-x-2 my-2">
-        <img className="h-10 w-10 rounded-full" src="" alt="tech image" />
-        <img className="h-10 w-10 rounded-full" src="" alt="tech image" />
+        <Image className="h-10 w-10 rounded-full" src="" alt="tech image" />
+        <Image className="h-10 w-10 rounded-full" src="" alt="tech image" />
       </div>
       <p className="uppercase py-2 text-gray-300 text-sm">
         Started work... -Ended...

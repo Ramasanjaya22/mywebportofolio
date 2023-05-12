@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import React from 'react'
 
 type Props = {}
 
 export default function About({}: Props) {
+  
+
   return (
     
     <motion.div
@@ -34,9 +37,33 @@ export default function About({}: Props) {
             <span className='underline decoration-emerald-600'>know</span>{" "}
             me
             </h4>
-    <p className='text-sm'>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis laborum quod ea facere inventore cumque quasi aliquid, rem dolore doloremque sapiente dolorem accusamus, repellat reiciendis, maxime incidunt perspiciatis vel aliquam!
-    Maxime ex, minus fugiat itaque numquam ducimus nulla. Assumenda, a voluptatem repellendus aspernatur nihil ipsa quaerat, obcaecati sed illum ut quod voluptates. Soluta earum voluptates tenetur deserunt fugit blanditiis quas.</p>            
+            <div className='justify-stretch text-justify dark:text-gray-400'>
+            <div className='text-sm leading-6 tracking-[1px]'>
+  <motion.p initial={{opacity: 0, y: 50}} animate={{opacity: 1, y: 0}} transition={{delay: 0.5}}>
+    💻 As a&nbsp;
+    <Link target='_blank' className='font-semibold text-emerald-600 hover:animate-pulse' href={'https://www.devry.edu/online-programs/area-of-study/technology/what-does-a-software-developer-do.html#:~:text=interact%20with%20computers.-,What%20Is%20the%20Job%20Description%20for%20a%20Software%20Developer%3F,that%20those%20systems%20remain%20functional.'}> Software Developer</Link>, I strongly believe that technology can bring about effective solutions to the various challenges faced by society. I&apos;m always on the lookout for ways to enhance my skills and find innovative ways of leveraging technology to create products and services that can benefit a large number of people.
+  </motion.p>
+  <br />
+  <motion.p initial={{opacity: 0, y: 50}} animate={{opacity: 1, y: 0}} transition={{delay: 1}}>
+    🛠️ My name is Rama and I&apos;m a Fullstack developer with hands-on experience in working with a wide range of technologies such as&nbsp;
+    <Link target='_blank' className=' font-semibold text-sky-500 hover:animate-pulse' href={'https://react.dev/'}>React</Link>
+    ,&nbsp;
+    <Link target='_blank' className=' font-semibold text-sky-400 hover:animate-pulse' href={'https://tailwindcss.com/'}>TailwindCSS</Link>
+    ,&nbsp;
+    <Link target='_blank' className=' font-semibold text-slate-500 hover:animate-pulse' href={'https://nextjs.org/'}>NextJS</Link>
+    , and&nbsp;
+    <Link target='_blank' className=' font-semibold text-purple-400 hover:animate-pulse' href={'https://www.figma.com/'}>Figma</Link>.
+    Additionally, I possess expertise in game and AR development utilizing&nbsp;
+    <Link target='_blank' className=' font-semibold text-slate-600 hover:animate-pulse' href={'https://www.unity.com/'}>Unity</Link>.
+    I enjoy fusing together my design and development skills to create products that are both visually appealing and user-friendly. I approach every project with meticulous attention to detail, an organized mindset, and a strong drive to explore new technologies and conceive creative ways to utilize them. My main focus is on developing solutions that are user-friendly, intuitive, and easy-to-use.
+  </motion.p>
+  <br />
+  <motion.p initial={{opacity: 0, y: 50}} animate={{opacity: 1, y: 0}} transition={{delay: 1.5}}>
+    🎓 As a student of Informatics at&nbsp;
+    <Link target='_blank' className=' font-semibold text-red-500 hover:animate-pulse' href={'https://telkomuniversity.ac.id/'}>Telkom University</Link>, I have acquired a solid foundation in programming and software development that I continue to build upon with my professional experience. I&apos;m passionate about learning and applying new concepts to develop innovative solutions. I&apos;m eager to learn and grow as a developer, and am committed to keeping up-to-date with the latest technologies and trends in the industry.
+  </motion.p>
+</div>
+    </div>
         </div>
     </motion.div>
     
