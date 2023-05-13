@@ -2,44 +2,43 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-type Props = {};
+type Props = {
+  jobTitle: string;
+  companyImage: string;
+  companyName: string;
+  techImages: string[];
+  jobDates: string;
+  summaryPoints: string[];
+};
 
-const ExperienceCard = (props: Props) => {
+const ExperienceCard = ({ jobTitle,companyImage, companyName, techImages, jobDates, summaryPoints }: Props) => {
   return (
-    <article className="flex flex-col rounded-sm items-center space-y-7 flex-shrink-0 w-[200px] md:w-[300px] xl:w-[700px] snap-center bg-[#808080] opacity-80 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-x-hidden overflow-y-hidden">
+    <article className="flex flex-col rounded-sm items-center flex-shrink-0 w-44 md:w-64 xl:w-80 bg-gray-300 hover:bg-gray-400 dark:bg-gray-700 dark:hover:bg-gray-800 dark:text-gray-400 cursor-pointer transition-all">
     <motion.img
-      className="w-32 h-32 rounded-full md:rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
-      initial={{  
-      }}
-      src=""
+      className="w-24 h-24 rounded-full md:rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center p-4"
+      src={companyImage}
       alt="job image"
     />
-
-    <div className="px-0 md:px-10">
-      <h4 className="text-4xl font-light">Job title</h4>
-      <p className="font-bold text-2xl mt-1">Telkom University</p>
+  
+  <div className="px-8 md:px-10 text-justify">
+      <h4 className="text-xl font-light">{jobTitle}</h4>
+      <p className="font-bold text-sm mt-1">{companyName}</p>
       <div className="flex space-x-2 my-2">
-        <Image className="h-10 w-10 rounded-full" src="" alt="tech image" />
-        <Image className="h-10 w-10 rounded-full" src="" alt="tech image" />
+        {techImages.map((image, index) => (
+          <img key={index} className="h-10 w-10 rounded-full" src={image} alt="tech image" />
+        ))}
       </div>
-      <p className="uppercase py-2 text-gray-300 text-sm">
-        Started work... -Ended...
-      </p>
+      <p className="uppercase py-2 text-xs font-semibold">{jobDates}</p>
       <div className="overflow-x-hidden overflow-y-hidden h-fit">
         <ul className=" list-disc space-y-4 ml-4 text-sm ">
-          <li>
-            Summary points Summary pointsSummary pointsSummary pointsSummary
-            pointsSummary points Summary points Summary pointsSummary
-            pointsSummary pointsSummary pointsSummary points
-          </li>
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
+          {summaryPoints.map((point, index) => (
+            <li key={index} className="whitespace-pre-wrap break-all">{point}</li>
+          ))}
         </ul>
       </div>
     </div>
   </article>
+  
 );
 };
 
