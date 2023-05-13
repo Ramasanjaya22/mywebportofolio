@@ -81,9 +81,9 @@ const Home: NextPage = () => {
         <Skills />
       </section> */}
 
-      {/* <section id='projects' className='snap-center'>
+      <section id='projects' className='snap-center'>
         <Projects />
-      </section> */}
+      </section>
 
       <section id='contact' className='snap-center'>
         <Contact />

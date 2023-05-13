@@ -13,7 +13,7 @@ const projects = [
     link: "https://quote-generator-chi-amber.vercel.app/",
   },
   {
-    name: "Yifei's Portfolio",
+    name: "Rama Portfolio",
     description:
       "Yep, I built this fully responsive personal portfolio with an emphasis on UX design.",
     image: "/portfolio.png",
@@ -32,16 +32,16 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-      <section id="projects">
+      <div>
         <h1 className="my-10 text-center uppercase tracking-[20px] text-gray-500 text-xl md:text-3xl mb-15">
           Projects
         </h1>
   
-        <div className="flex flex-col space-y-28 md:pb-48 mx-auto">
+        <div className="flex flex-col rounded-sm items-center flex-shrink-0 w-44 md:w-64 xl:w-80 bg-gray-300 hover:bg-gray-400 dark:bg-gray-700 dark:hover:bg-gray-800 dark:text-gray-400 cursor-pointer transition-all  sm:w-full">
           {projects.map((project, idx) => {
             return (
               <div key={idx}>
-                <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12 text-sm">
+                <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row text-sm">
                   <div className=" md:w-1/2">
                     <Link href={project.link}>
                       <Image
@@ -80,7 +80,8 @@ const ProjectsSection = () => {
             );
           })}
         </div>
-      </section>
+
+        </div>
     );
 };
 
