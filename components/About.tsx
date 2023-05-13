@@ -8,16 +8,15 @@ export default function About({}: Props) {
   
 
   return (
+    <div>
+       <h3 className="mt-40 md:mt-8 uppercase tracking-[20px] text-gray-500 text-2xl text-center">
+        About</h3>
     
     <motion.div
     initial={{ opacity:0 }}
     whileInView={{ opacity:1 }}
     transition={{ duration: 1.5 }}
-    className='relative flex flex-col h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
-
-    <h3 className='absolute top-5 lg:top-2 uppercase tracking-[24px] text-gray-500 text-2xl
-        '>About</h3>
-
+    className='relative flex flex-col h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center sm:my-16'>
         <motion.img
         initial={{
             x:-200,
@@ -32,7 +31,7 @@ export default function About({}: Props) {
          className="-mb-20 md:mb-0 flex-shrink-0 sm:w-56 sm:h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-full xl:w-[500px] xl:h-[600px]"
         />
 
-<div className='space-y-8 px-0 md:px-8'>
+    <div className='space-y-8 px-0 md:px-8'>
             <h4 className='text-5xl font-semibold font-mono mt-4'>Get to {" "}
             <span className='underline decoration-emerald-600'>know</span>{" "}
             me
@@ -64,7 +63,9 @@ export default function About({}: Props) {
 </div>
     </div>
         </div>
+        
     </motion.div>
+    </div>
     
   )
 }
