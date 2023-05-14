@@ -77,9 +77,9 @@ const Home: NextPage = () => {
         <Experience />
       </section>
 
-      {/* <section id='skills' className='snap-center'>
+      <section id='skills' className='snap-center'>
         <Skills />
-      </section> */}
+      </section>
 
       <section id='projects' className='snap-center'>
         <Projects projects={[]} />

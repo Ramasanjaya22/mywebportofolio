@@ -59,7 +59,7 @@ export default function Experience({ }: Props) {
         duration: 1.5,
       }}
     >    
-      <div className="w-full h-auto flex space-x-2 sm:overflow-x-scroll sm:scrollbar p-8 item-center md:justify-center">
+      <div className="w-full h-auto flex space-x-2 overflow-x-scroll sm:scrollbar p-8 item-center md:justify-center">
         {/* experiencecard */}
         {experiences.map((experience, index) => (
           <ExperienceCard key={index} {...experience} />

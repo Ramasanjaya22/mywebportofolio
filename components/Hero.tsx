@@ -54,8 +54,6 @@ export default function Hero({ }: Props) {
                 alt="profile" />
         
             <div className='z-20'>
-                {/* <h2 className='text-sm my-2 uppercase text-gray-700 tracking-[15px]'>Rama Sanjaya</h2> */}
-
                 <div className="md:mt-2 ">
           <div className="text-4xl mt-6 md:mt-0 md:text-6xl">
             <motion.ul
