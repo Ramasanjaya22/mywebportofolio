@@ -27,7 +27,7 @@ const projects: Project[] = [
       "Reddo is a reading tracking website with a gamify concept equipped with Pomodoro Timer feature, leaderboard, and sharing community. Reddo is my project application and has been participated in Gemastik XV.",
     image: "/project/reddo.png",
     github: "https://github.com/Ramasanjaya22/Reddo-laravel",
-    link: "",
+    link: "https://youtu.be/CTgE83YVVNw",
     figma: "https://www.figma.com/proto/wQTEOZQLrp6lqkTRra3fiS/REDDO?type=design&node-id=1412-3686&scaling=min-zoom&page-id=1412%3A476&starting-point-node-id=1412%3A3686"
   },
   {
@@ -47,7 +47,7 @@ const projects: Project[] = [
     "anatomeAR is a mobile application that helps users to learn human anatomy through augmented reality. Users can point their smartphone camera at a human body and the app will display relevant information, such as the names of bones and muscles. The app also includes quizzes and interactive features to make learning more engaging.",
     image: "/project/anatomyAR.png",
     github: "",
-    link: "",
+    link: "https://www.figma.com/file/WIYlDWbal5iENqGdNFPLv7/AnatomeAR?type=design&node-id=38%3A4865&t=yiRbfbmWMOaLKiHH-1",
     figma: "https://www.figma.com/proto/WIYlDWbal5iENqGdNFPLv7/AnatomeAR?type=design&node-id=38-3446&scaling=contain&page-id=38%3A3280&starting-point-node-id=38%3A3446"
     },
     {
