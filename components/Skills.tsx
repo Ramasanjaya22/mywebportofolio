@@ -85,7 +85,7 @@ const Skills = ({ }: Props) => {
           <Image src="/logo/figma.png" alt="Figma" width={48} height={48} className="rounded-full" />
         </div>
         <div className="col-span-1 flex justify-end items-center">
-          <Image src="/logo/Unity.png" alt="Unity" width={48} height={48} className="rounded-full" />
+          <Image src="/logo/unity.png" alt="Unity" width={48} height={48} className="rounded-full" />
         </div>
         <div className="col-span-1 flex justify-end items-center">
           {/* finishing my rest of code!  */}
@@ -93,7 +93,7 @@ const Skills = ({ }: Props) => {
         </div>
         <div className="col-span-1 flex justify-end items-center">
           {/* finishing my rest of code!  */}
-          <Image src="/logo/kotlin.png" alt="kotlin" width={48} height={48} className="rounded-full" />
+          <Image src="/logo/Kotlin.png" alt="kotlin" width={48} height={48} className="rounded-full" />
         </div>
       </div>
       </motion.div>

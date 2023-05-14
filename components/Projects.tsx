@@ -25,7 +25,7 @@ const projects: Project[] = [
     category: ["Web","UI Design"],
     description:
       "Reddo is a reading tracking website with a gamify concept equipped with Pomodoro Timer feature, leaderboard, and sharing community. Reddo is my project application and has been participated in Gemastik XV.",
-    image: "/project/reddo2.png",
+    image: "/project/reddo.png",
     github: "https://github.com/Ramasanjaya22/Reddo-laravel",
     link: "",
     figma: "https://www.figma.com/proto/wQTEOZQLrp6lqkTRra3fiS/REDDO?type=design&node-id=1412-3686&scaling=min-zoom&page-id=1412%3A476&starting-point-node-id=1412%3A3686"
@@ -85,7 +85,7 @@ const projects: Project[] = [
     category: ["Web"],
     description:
       "MetaVersus is a web project that features a landing page built using ReactJS, inspired by the tutorials from Javascript Mastery on Youtube. The goal of this project is to showcase a modern and stylish landing page that utilizes the latest web development technologies. With its clean design and smooth user experience, MetaVersus is a great example of how ReactJS can be used to create beautiful and functional websites.",
-    image: "/project/metaversus.png",
+    image: "/project/metaVersus.png",
     github: "https://github.com/Ramasanjaya22/metaversus-jsm",
     link: "https://metaversus-clone.netlify.app/",
     figma: ""
