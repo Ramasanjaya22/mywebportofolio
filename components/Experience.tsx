@@ -38,7 +38,7 @@ export default function Experience({ }: Props) {
       techImages: ["/logo/ts.png", "/logo/nextjs.png","/logo/react.png","/logo/tailwind.png"],
       jobDates: "Jan 2022 - Present",
       summaryPoints: ["Collaborating with other project contributors to develop and improve open source software", "Contributing code to various projects on GitHub, including bug fixes, feature enhancements, and documentation updates"],
-    }
+    },
   ];
 
   
@@ -59,7 +59,7 @@ export default function Experience({ }: Props) {
         duration: 1.5,
       }}
     >    
-      <div className="w-full h-auto flex space-x-2 overflow-x-scroll scrollbar p-8 item-center md:justify-center">
+      <div className="w-full h-auto flex space-x-2 sm:overflow-x-scroll sm:scrollbar p-8 item-center md:justify-center">
         {/* experiencecard */}
         {experiences.map((experience, index) => (
           <ExperienceCard key={index} {...experience} />

@@ -25,14 +25,14 @@ const ExperienceCard = ({ jobTitle,companyImage, companyName, techImages, jobDat
       <p className="font-bold text-sm mt-1">{companyName}</p>
       <div className="flex space-x-2 my-2">
         {techImages.map((image, index) => (
-          <img key={index} className="rounded-full" src={image} alt="tech image" width={24} height={24} />
+          <Image key={index} className="rounded-full" src={image} alt="tech image" width={24} height={24} />
         ))}
       </div>
       <p className="uppercase py-2 text-xs font-semibold">{jobDates}</p>
       <div className="overflow-x-hidden overflow-y-hidden h-fit">
-        <ul className=" list-disc space-y-4 ml-4 text-sm ">
+        <ul className=" list-disc space-y-4 ">
           {summaryPoints.map((point, index) => (
-            <li key={index} className="whitespace-pre-wrap break-all text-xs pb-1">{point}</li>
+            <li key={index} className="text-sm pb-2 text-justify">{point}</li>
           ))}
         </ul>
       </div>

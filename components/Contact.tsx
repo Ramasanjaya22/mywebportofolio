@@ -37,7 +37,7 @@ export default function ContactMe({}: Props) {
           Send me a message!
         </h3>
         <div className="flex flex-col space-y-10">
-        <p className="relative text-lg font-mono flex text-center justify-center text-emerald-700">{text}</p>
+        <p className="relative text-lg font-mono flex text-center justify-center text-emerald-700 sm:mt-8">{text}</p>
           <div className="space-y-10  text-gray-600">
             <div className="flex items-center space-x-5 justify-between">
               <BsFillEnvelopeAtFill className="text-emerald-500 h-7 w-7 animate-pulse" />

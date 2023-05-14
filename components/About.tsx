@@ -10,8 +10,8 @@ export default function About({}: Props) {
   return (
     <div>
        <h3 className="mt-40 md:mt-8 uppercase tracking-[20px] text-gray-500 text-2xl text-center">
-        About</h3>
-    
+    About
+  </h3>
     <motion.div
     initial={{ opacity:0 }}
     whileInView={{ opacity:1 }}
@@ -28,18 +28,17 @@ export default function About({}: Props) {
          whileInView={{ opacity:1, x:0 }}
          viewport={{ once:true }}
          src='/rama-2.png'
-         className="-mb-20 md:mb-0 flex-shrink-0 sm:w-56 sm:h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-full xl:w-[500px] xl:h-[600px]"
+         className=" md:mb-0 flex-shrink-0 sm:w-48 sm:h-48 rounded-full object-cover md:rounded-lg md:w-64 md:h-full xl:w-[500px] xl:h-[600px]"
         />
 
-    <div className='space-y-8 px-0 md:px-8'>
-            <h4 className='text-5xl font-semibold font-mono mt-4'>Get to {" "}
+    <div className='space-y-8 px-0 md:px-8 '>
+            <h4 className='text-5xl font-semibold font-mono'>Get to {" "}
             <span className='underline decoration-emerald-600'>know</span>{" "}
             me
             </h4>
             <div className='justify-stretch text-justify dark:text-gray-400'>
             <div className='text-sm leading-6 tracking-[1px]'>
   
-  <br />
   <motion.p initial={{opacity: 0, y: 50}} animate={{opacity: 1, y: 0}} transition={{delay: 1}}>
     🎓 As a student of Informatics at&nbsp;
     <Link target='_blank' className=' font-semibold text-red-500 hover:animate-pulse' href={'https://telkomuniversity.ac.id/'}>Telkom University</Link>, I have acquired a solid foundation in programming and software development that I continue to build upon with my professional experience. I&apos;m passionate about learning and applying new concepts to develop innovative solutions. I&apos;m eager to learn and grow as a developer, and am committed to keeping up-to-date with the latest technologies and trends in the industry.
