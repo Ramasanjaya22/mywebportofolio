@@ -60,6 +60,25 @@ function Header({}: Props) {
         
 
         <div className='flex items-center justify-between'>
+          <motion.div
+          initial={{ 
+            x: 500,
+            opacity: 0,
+            scale: 0.5
+           }}
+           animate={{ 
+            x: 0,
+            opacity: 1,
+            scale: 1
+            }}
+            transition={{ 
+              duration: 1.5,
+             }}>
+        <Link href={'/rama_cv_2023.pdf'} className="hidden sm:flex flex-row items-center outline-2 text-gray-500 outline outline-gray-500 md:py-1 px-1 rounded-none fill-none font-normal font-mono text-xs mr-4 uppercase tracking-[5px] animate-pulse" download>
+      Resume
+    </Link>
+  </motion.div>
+
         <motion.div
         initial={{ 
           x: 500,
